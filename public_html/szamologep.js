@@ -6,32 +6,35 @@ var valtM="";
 
 function osszead(){
     var osszeg=Number(valtA)+Number(valtB);
-    document.getElementById("szoveg").innerHTML="osszeg";
+    document.getElementById("szoveg").innerHTML=osszeg;
+    console.log(valtA);
+    console.log(osszeg);
     
 }
 
 function kivonas(){
     var osszeg=Number(valtA)-Number(valtB);
-    document.getElementById("szoveg").innerHTML="osszeg";
+    document.getElementById("szoveg").innerHTML=osszeg;
     
 }
 
 function szorzas(){
     var osszeg=Number(valtA)*Number(valtB);
-    document.getElementById("szoveg").innerHTML="osszeg";
+    document.getElementById("szoveg").innerHTML=osszeg;
     
 }
 
 function osztas(){
     var osszeg=Number(valtA)/Number(valtB);
-    document.getElementById("szoveg").innerHTML="osszeg";
+    document.getElementById("szoveg").innerHTML=osszeg;
+    console.log(osszeg);
     
 }
 function szamolas() { 
     
-    var valtA=document.getElementById("a").value;
-    var valtB=document.getElementById("b").value
-    var valtM=document.getElementById("muv").value;
+     valtA=document.getElementById("a").value;
+     valtB=document.getElementById("b").value
+     valtM=document.getElementById("muv").value;
     if(valtM=="+"){
     osszead();
 }
@@ -47,7 +50,7 @@ if(valtM=="*"){
 if(valtM=="/"){
     osztas();
 }
-    document.getElementById("szoveg").innerHTML="osszeg";
+  
 
 }
             
